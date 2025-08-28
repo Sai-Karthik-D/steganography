@@ -1,0 +1,91 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #2c3e50;
+}
+
+/* Input & Buttons */
+input, button {
+  margin: 8px;
+  padding: 12px;
+  font-size: 16px;
+  width: 90%;
+  max-width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Canvas Styling */
+canvas {
+  margin: 12px auto;
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Output text */
+#outputChar {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  input, button {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  canvas {
+    width: 90vw;
+  }
+}
